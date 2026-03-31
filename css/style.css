@@ -19,6 +19,26 @@ img {
   height: auto;    /* Maintains the original aspect ratio */
 }
 
+.mainimg {
+  max-width: 40%; /* Ensures the image doesn't exceed its container's width */
+  height: auto;    /* Maintains the original aspect ratio */
+}
+
+.corner {
+  position: fixed;
+    bottom: -150px; /* Positions the element 20px from the bottom of the screen */
+    left: -150px;  /* Positions the element 20px from the right of the screen */
+    /* Add other styling as needed (background, padding, etc.) */
+    padding: 0px;
+    z-index: 1000; /* Ensures it is above other content */
+    transition: outline 0.3s ease; 
+}
+
+.corner:hover {
+    outline: 4px solid #96dbe9; /* Example: 4px thick, solid red outline */
+    outline-offset: 2px; /* Optional: Adds space between the image and the outline */
+}
+
 [data-theme="dark"] {
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
@@ -26,6 +46,35 @@ img {
     --bg-color: #161625;
     --heading-color: #818cab;
 }
+
+/* Darkened background */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* 70% black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+/* New Content Box */
+.modal-content {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Hidden State */
+.hidden {
+  display: none !important;
+  opacity: 0;
+}
+
 
 body {
   font-family: "Lato", sans-serif;
@@ -47,6 +96,8 @@ h1 {
 p {
   font-size: 1.1rem;
   line-height: 1.6rem;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 a {
