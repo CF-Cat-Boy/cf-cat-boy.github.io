@@ -9,7 +9,13 @@
 }
 
 img {
-  max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+  border-radius: 30px;
+  margin: auto;
+  display: block;
+}
+
+.map {
+  max-width: 70%; /* Ensures the image doesn't exceed its container's width */
   height: auto;    /* Maintains the original aspect ratio */
 }
 
@@ -25,7 +31,8 @@ body {
   font-family: "Lato", sans-serif;
   background-color: var(--bg-color);
   color: var(--font-color);
-  max-width: 90%;
+  max-width: 95%;
+  justify-content: center;
   margin: 0 auto;
   font-size: calc(1rem + 0.25vh);
 }
@@ -76,7 +83,8 @@ nav {
   display: flex;
   align-items: center;
   
-  em {
+  strong {
+    padding-bottom: 6.5%;
     margin-left: 10px;
     font-size: 1rem;
   }
@@ -130,4 +138,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
+main {
+  align-items: center;
+}
