@@ -21,6 +21,11 @@ img {
   height: 70%;    /* Maintains the original aspect ratio */
 }
 
+.dex {
+  transform: translateX(-43px);
+  max-width: 70%;
+}
+
 .tooltip {
     position: relative; /* Needed to position the tooltip text */
     display: inline-block;
