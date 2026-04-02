@@ -13,7 +13,7 @@ img {
   margin: auto;
   display: block;
 }
-
+      
 .map {
   /*max-width: 70%;  Ensures the image doesn't exceed its container's width */
   text-align: center;
@@ -22,8 +22,8 @@ img {
 }
 
 .dex {
-  transform: translateX(-43px);
-  max-width: 70%;
+  transform: translateX(-3.5%);
+  max-width: 90%;
 }
 
 .tooltip {
@@ -56,6 +56,14 @@ img {
 .mainimg {
   max-width: 40%; /* Ensures the image doesn't exceed its container's width */
   height: auto;    /* Maintains the original aspect ratio */
+}
+
+.corner {
+  position: fixed;
+  bottom: -150px; /* Positions the element 20px from the bottom of the screen */
+  left: -150px;  /* Positions the element 20px from the right of the screen */
+  /* Add other styling as needed (background, padding, etc.) */
+  padding: 0px;
 }
 
 .corner {
