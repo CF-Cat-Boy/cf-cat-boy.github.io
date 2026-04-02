@@ -65,11 +65,10 @@ img {
   /* Add other styling as needed (background, padding, etc.) */
   padding: 0px;
 }
-
-.corner {
+.othercorner {
   position: fixed;
   bottom: -150px; /* Positions the element 20px from the bottom of the screen */
-  left: -150px;  /* Positions the element 20px from the right of the screen */
+  right: -150px;  /* Positions the element 20px from the right of the screen */
   /* Add other styling as needed (background, padding, etc.) */
   padding: 0px;
 }
@@ -79,11 +78,23 @@ img {
   transition: filter 0.3s ease;
   stroke-width: 0px;
 }
+.yelloutline {
+  z-index: 1000;
+  transition: filter 0.3s ease;
+  stroke-width: 0px;
+}
 
 .outline:hover {
     /*outline: 4px solid #96dbe9;  Example: 4px thick, solid red outline */
     outline-offset: 2px; /* Optional: Adds space between the image and the outline */
     filter: drop-shadow(0px 0px 10px #96dbe9);
+    /*stroke: #96dbe9;
+    stroke-width: 3px;  Outline thickness on hover */
+}
+.yelloutline:hover {
+    /*outline: 4px solid #96dbe9;  Example: 4px thick, solid red outline */
+    outline-offset: 2px; /* Optional: Adds space between the image and the outline */
+    filter: drop-shadow(0px 0px 10px #ffd9b9);
     /*stroke: #96dbe9;
     stroke-width: 3px;  Outline thickness on hover */
 }
